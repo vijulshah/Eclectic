@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_chat"
+        android:title="Chat"
+        android:icon="@drawable/chat_off_new"/>
+    <item
+        android:id="@+id/item_feed"
+        android:title="Feed"
+        android:icon="@drawable/feed" />
+    <item
+        android:id="@+id/item_tasks"
+        android:title="Task"
+        android:icon="@drawable/task" />
+
+    <item
+        android:id="@+id/item_share"
+        android:title="Share eclectic"
+        android:icon="@drawable/ic_share"
+        />
+
+</menu>

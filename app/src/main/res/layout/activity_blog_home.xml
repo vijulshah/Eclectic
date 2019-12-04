@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Blogs.Blog_Home">
+
+    <RelativeLayout
+        android:id="@+id/rl_blog_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Eclectic"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:fontFamily="cursive"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_blog_myProfile"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_blog_profile"
+            android:background="?attr/selectableItemBackground"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginLeft="10dp" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_blog_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/blog_search"
+            android:background="?attr/selectableItemBackground"
+            android:tint="@android:color/white"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_blog_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:elevation="3dp"
+        android:translationZ="3dp"
+        android:background="@color/colorPrimaryDark">
+
+        <EditText
+            android:id="@+id/edt_blog_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:hint="search"
+            android:paddingLeft="45dp"
+            android:paddingRight="20dp"
+            android:textCursorDrawable="@drawable/black_cursor_color"
+            android:textColor="@android:color/black" />
+
+        <ImageButton
+            android:id="@+id/ib_blog_close_search"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:tint="@android:color/black"
+            app:background="?attr/selectableItemBackground"
+            android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_blog_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blog_bg"
+        android:layout_marginTop="50dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_blog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_up_arrow"
+        app:fabSize="mini"
+        app:layout_anchor="@+id/rv_blog_container"
+        app:layout_anchorGravity="bottom|center" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_blog_new_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|right"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/ic_add"
+        android:visibility="visible"
+        app:fabSize="normal" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_blog_newPost_simple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|right"
+        android:background="?attr/selectableItemBackground"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="180dp"
+        android:src="@drawable/ic_edit"
+        android:visibility="invisible"
+        app:fabSize="normal" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_blog_newPostImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|right"
+        android:layout_marginEnd="130dp"
+        android:background="?attr/selectableItemBackground"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/blog_add"
+        android:visibility="invisible"
+        app:fabSize="normal" />
+
+    <ProgressBar
+        android:id="@+id/progressbar_blogHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyle"
+        android:background="#b7000000"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

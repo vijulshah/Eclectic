@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.greenfrvr:hashtag-view:1.2.1@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/574fe6d250aff3d071ad4b5856b75a25/jetified-hashtag-view-1.2.1/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/574fe6d250aff3d071ad4b5856b75a25/jetified-hashtag-view-1.2.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/574fe6d250aff3d071ad4b5856b75a25/jetified-hashtag-view-1.2.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.greenfrvr/hashtag-view/1.2.1/b8daf7393383eb602111add847bde5803b0eba3b/hashtag-view-1.2.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.greenfrvr/hashtag-view/1.2.1/7cff6e1cbe28ab2ecb3ca9dd546666818c626055/hashtag-view-1.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

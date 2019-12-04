@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Blogs.Blog_UserPost_Page"
+    android:layout_marginBottom="15dp"
+    android:background="@drawable/blog_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/signup_bg"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_blog_userPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_blog_userTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Post Title"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_blog_userDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Post Description"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/ll_blog_userPost_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_blog_userDesc"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tv_blog_user_Post_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="date ,"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/tv_blog_user_Post_time"
+                android:layout_toRightOf="@+id/tv_blog_user_Post_date"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="time"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/tv_blog_postedBy_Uname"
+                android:text="Post by : "
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_blog_postedBy_Uname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="Username"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_blog_sendDmMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/blog_btn_msg_bg"
+            android:text="Send Message"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

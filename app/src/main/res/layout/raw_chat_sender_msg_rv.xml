@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_chat_rv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@android:color/transparent">
+
+  <RelativeLayout
+      android:visibility="gone"
+      android:id="@+id/sender_rl"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_send_arrow"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/msg_send"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="7dp">
+
+      <TextView
+          android:id="@+id/tv_msg_sender"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@android:color/black"
+          android:text="sent messages"
+          android:textSize="15sp"
+          android:padding="10dp"/>
+
+      <TextView
+          android:id="@+id/tv_msg_time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@id/tv_msg_sender"
+          android:layout_marginTop="3dp"
+          android:layout_marginBottom="3dp"
+          android:layout_marginLeft="3dp"
+          android:layout_marginEnd="5dp"
+          android:textSize="10sp"
+          android:text="time"
+          android:textColor="@color/colorPrimary" />
+
+      <ImageView
+          android:id="@+id/iv_msg_send_status"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@id/tv_msg_sender"
+          android:layout_marginStart="9dp"
+          android:layout_marginBottom="3dp"
+          android:layout_toEndOf="@id/tv_msg_sender"
+          tools:ignore="NotSibling" />
+      <!--android:src="@drawable/ic_wait_to_send"-->
+
+    </RelativeLayout>
+
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:visibility="gone"
+      android:id="@+id/receiver_rl"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@android:color/transparent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_received_arrow"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/msg_received"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="7dp">
+
+      <TextView
+          android:id="@+id/tv_msg_receiver"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@android:color/black"
+          android:text="received messages"
+          android:textSize="15sp"
+          android:padding="10dp"/>
+
+      <TextView
+          android:id="@+id/tv_msg_received_time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@id/tv_msg_receiver"
+          android:layout_marginTop="3dp"
+          android:layout_marginBottom="3dp"
+          android:layout_marginRight="3dp"
+          android:layout_marginEnd="5dp"
+          android:textSize="10sp"
+          android:text="time"
+          android:textColor="@color/colorPrimary" />
+
+    </RelativeLayout>
+
+  </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/write_status_RL"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Chats.Chat_WriteStatus">
+
+    <EditText
+        android:id="@+id/edt_write_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:textCursorDrawable="@drawable/write_status_cursor"
+        android:cursorVisible="true"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:hint="Type a status"
+        android:textColor="@android:color/white"
+        android:textColorHint="#9affffff"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/write_status_font"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/write_status_font"
+        android:tint="@android:color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:id="@+id/write_status_bg_color"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_status_bg"
+        android:tint="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/write_status_font"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/write_status_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:elevation="10dp"
+        android:translationZ="10dp"
+        android:src="@drawable/ic_add_write_status"
+        android:tint="@color/colorPrimaryDark"
+        app:backgroundTint="@color/colorLightBlue"
+        app:fabSize="normal"/>
+</RelativeLayout>

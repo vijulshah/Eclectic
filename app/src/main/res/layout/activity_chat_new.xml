@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chats.Chat_New">
+
+    <RelativeLayout
+        android:id="@+id/rl_new_chat_tab"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="New Chat"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:fontFamily="cursive"
+            android:textColor="@android:color/white"/>
+
+        <ImageButton
+            android:id="@+id/imgbtn_new_chat_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/blog_search"
+            android:background="?attr/selectableItemBackground"
+            android:tint="@android:color/white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_new_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_new_chat_tab"
+        android:scrollbarSize="4dp"
+        android:scrollbars="vertical"/>
+
+</RelativeLayout>

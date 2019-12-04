@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Tasks.New_Task">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <ImageView
+            android:id="@+id/iv_newTask_del"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end|top"
+            android:background="?attr/selectableItemBackground"
+            app:srcCompat="@drawable/ic_delete"
+            android:tint="@android:color/white"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:scaleType="center"
+            tools:ignore="MissingPrefix"
+            android:contentDescription="menu"/>
+
+        <ImageView
+            android:id="@+id/iv_newTask_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start|top"
+            android:background="?attr/selectableItemBackground"
+            app:srcCompat="@drawable/ic_back"
+            android:tint="@android:color/white"
+            android:clickable="true"
+            android:scaleType="center"
+            tools:ignore="MissingPrefix"
+            android:contentDescription="menu"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/edt_newTask_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:background="@android:color/white"
+        android:textCursorDrawable="@drawable/black_cursor_color"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/opensans_regular"
+        android:textColor="@android:color/black"
+        android:hint="Title"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edt_newTask_notes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/edt_newTask_title"
+        android:layout_above="@+id/rl_task_create"
+        android:background="@android:color/white"
+        android:textCursorDrawable="@drawable/black_cursor_color"
+        android:layout_margin="5dp"
+        android:hint="Note"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="20dp"
+        android:textSize="18sp"
+        android:gravity="start"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_task_create"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@color/teal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:padding="1dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="created : "
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_task_created_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="dd/mm/yy  00:00 am"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="last modified : "
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/tv_task_updated_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="dd/mm/yy  00:00 am"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

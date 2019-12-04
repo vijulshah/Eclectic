@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: se.emilsjolander:intentbuilder-api:0.14.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e04ed18ddeb65faef20a6504c55e61c3/intentbuilder-api-0.14.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e04ed18ddeb65faef20a6504c55e61c3/intentbuilder-api-0.14.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/se.emilsjolander/intentbuilder-api/0.14.0/1d3763ed9e6c32fd236c5646ca5c1bd7d3bfffea/intentbuilder-api-0.14.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/se.emilsjolander/intentbuilder-api/0.14.0/6ec72464371e64a968322c62e0b25d4703781ccf/intentbuilder-api-0.14.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

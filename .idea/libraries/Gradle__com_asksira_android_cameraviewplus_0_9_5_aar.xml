@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.asksira.android:cameraviewplus:0.9.5@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1ffbc686e1d2a6eb42fd49dc33623758/jetified-cameraviewplus-0.9.5/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1ffbc686e1d2a6eb42fd49dc33623758/jetified-cameraviewplus-0.9.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1ffbc686e1d2a6eb42fd49dc33623758/jetified-cameraviewplus-0.9.5/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.asksira.android/cameraviewplus/0.9.5/a98846d4a47c90aa89e0eeb95c62db42fa4aed44/cameraviewplus-0.9.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.asksira.android/cameraviewplus/0.9.5/337f42f3d364f7ab2c0e6ae56633fb2802c85795/cameraviewplus-0.9.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

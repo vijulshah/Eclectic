@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">761071958560-f5uh584qvipd0kect6hvjkhmore051hm.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://eclectic-d69f5.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">761071958560</string>
+    <string name="google_api_key" translatable="false">AIzaSyD_XZyIQ6RJuAAAwFi3SV-DrVV2LmUN_yY</string>
+    <string name="google_app_id" translatable="false">1:761071958560:android:99ba02adb33c1897</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD_XZyIQ6RJuAAAwFi3SV-DrVV2LmUN_yY</string>
+    <string name="google_storage_bucket" translatable="false">eclectic-d69f5.appspot.com</string>
+    <string name="project_id" translatable="false">eclectic-d69f5</string>
+</resources>

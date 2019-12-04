@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".CreateRoomPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/white">
+
+                <ImageButton
+                    android:id="@+id/ib_cr_exit"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_close"
+                    android:tint="@android:color/black"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_alignParentEnd="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Create a Room"
+                    android:textColor="@android:color/black"
+                    android:layout_centerInParent="true"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:fontFamily="cursive"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d5d5d5"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:id="@+id/tv_cr_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name : "
+                    android:textStyle="bold"
+                    android:fontFamily="@font/custom_fonts"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tv_cr_userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_cr_name"
+                    android:layout_marginLeft="15dp"
+                    android:text="Useranme"
+                    android:fontFamily="@font/custom_fonts"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:id="@+id/tv_cr_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email : "
+                    android:textStyle="bold"
+                    android:fontFamily="@font/custom_fonts"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tv_cr_userEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_cr_email"
+                    android:layout_marginLeft="15dp"
+                    android:text="Email id"
+                    android:fontFamily="@font/custom_fonts"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:text="Enter your company name : "
+                android:fontFamily="@font/custom_fonts"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/edt_cr_companyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:hint="Company Name"
+                android:fontFamily="@font/custom_fonts"
+                android:textSize="18sp"
+                android:background="@android:color/white"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d5d5d5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:text="Enter your room key : "
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/custom_fonts" />
+
+            <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
+                android:id="@+id/edt_cr_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:background="@android:color/white"
+                android:inputType="textPassword"
+                android:hint="Room Password"
+                android:maxLength="10"
+                app:tint_color="@color/colorAccent"
+                app:drawable_hide="@drawable/ic_hide"
+                app:drawable_show="@drawable/ic_show"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@drawable/black_cursor_color"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d5d5d5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_bullet"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.5"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:layout_gravity="center_vertical"
+                        android:text="Please note that we will be charging\nyou an amount for room creation."/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_bullet"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.5"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:layout_gravity="center_vertical"
+                        android:text="Pass this room key to your employees\nand start using Eclectic."/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_bullet"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.5"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:layout_gravity="center_vertical"
+                        android:text="Do not share this room key with\nanyone outside of your organization. "/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_cr_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dialog_btn"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Proceed to pay >>>"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

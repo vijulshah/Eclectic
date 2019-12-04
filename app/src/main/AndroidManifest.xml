@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="variable.com.eclectic">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_custom"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_custom"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".InvoicePage"></activity>
+
+        <activity android:name=".PaymentWebView" />
+
+        <activity android:name=".CreateRoomPage" />
+        <activity android:name=".Tasks.TaskFolder" />
+        <activity android:name=".Tasks.OpenTaskToEdit" />
+        <activity android:name=".Tasks.New_Task" />
+        <activity
+            android:name=".Tasks.Tasks_Home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EnterRoom"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Blogs.Blog_MyProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Blogs.Blog_UserPost_Page"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Blogs.Bolg_MyPost_Page"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Blogs.Blog_NewPost_Image"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Blogs.Blog_New_Post"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Chats.Chat_Home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Blogs.Blog_Home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Chats.Chat_WriteStatus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Chats.Chat_New"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Chats.Chat_Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Chats.ChatMessageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ForgotPassword"
+            android:screenOrientation="portrait" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

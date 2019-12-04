@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_newFolder_drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/iv_folder"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/folders"/>
+
+    <TextView
+        android:id="@+id/tv_newFolderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/iv_folder"
+        android:layout_toStartOf="@+id/ib_taskFolders_options"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="New Folder Name"
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <ImageButton
+        android:id="@+id/ib_taskFolders_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_options"
+        android:tint="@android:color/black"
+        android:background="?attr/selectableItemBackground"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"/>
+
+</RelativeLayout>

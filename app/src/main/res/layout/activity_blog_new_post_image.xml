@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Blogs.Blog_NewPost_Image">
+
+    <RelativeLayout
+        android:id="@+id/rl_blog_newPostImg_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/ib_newPostImg_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="New Post"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:fontFamily="cursive"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_blog_newPostImg_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_blog_newPostImg_toolBar"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_blog_new_post"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:src="@drawable/add_photo"/>
+
+        <TextView
+            android:id="@+id/tv_blog_newPostImg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_blog_new_post"
+            android:text="Title : "
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:fontFamily="cursive"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/edt_blog_newPostImg_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_blog_new_post"
+            android:layout_below="@+id/tv_blog_newPostImg_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="5dp"
+            android:hint="write a title..."
+            android:textCursorDrawable="@drawable/black_cursor_color"
+            android:textSize="20sp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_btn_blog_newPhoto"
+        android:layout_below="@+id/rl_blog_newPostImg_title"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_blog_newPostImg_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description : "
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:fontFamily="cursive"
+            android:layout_marginLeft="15dp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/edt_blog_newPostImg_desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_blog_newPostImg_desc"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="15dp"
+            android:hint="describe your post..."
+            android:textCursorDrawable="@drawable/black_cursor_color"
+            android:gravity="start"
+            android:paddingLeft="5dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_btn_blog_newPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view_above_blogBtns">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_blog_newPost_capture_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@color/teal"
+            android:layout_toLeftOf="@+id/view_blog_newPost"
+            android:src="@drawable/fab_status_camera"
+            android:outlineAmbientShadowColor="@color/colorTransparent"
+            android:outlineSpotShadowColor="@color/colorTransparent"
+            app:fabSize="normal"/>
+
+        <View
+            android:id="@+id/view_blog_newPost"
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@color/colorLightBlue"
+            app:fabSize="mini"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_blog_newPost_select_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/view_blog_newPost"
+            android:background="@color/colorAccent"
+            android:src="@drawable/ic_gallery"
+            app:fabSize="normal"
+            android:outlineAmbientShadowColor="@color/colorTransparent"
+            android:outlineSpotShadowColor="@color/colorTransparent" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_above_blogBtns"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/rl_blog_newPostImg_btns"
+        android:background="@color/colorLightBlue"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_blog_newPostImg_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp">
+
+        <Button
+            android:id="@+id/btn_blog_newPostImg_discard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:text="Discard"
+            android:background="@color/colorLightBlue"
+            android:elevation="3dp"
+            android:translationZ="3dp"/>
+
+        <Button
+            android:id="@+id/btn_blog_newPostImg_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:text="Post"
+            android:background="@color/colorLightBlue"
+            android:elevation="3dp"
+            android:translationZ="3dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

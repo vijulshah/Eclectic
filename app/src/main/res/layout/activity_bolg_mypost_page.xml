@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/blog_bg"
+    android:layout_marginBottom="15dp"
+    tools:context=".Blogs.Bolg_MyPost_Page">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/signup_bg"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/iv_blog_myPost"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_blog_myPostTitle"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Post Title"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post Description"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:id="@+id/tv_blog_myPostDesc"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tv_blog_my_Post_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="date ,"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/tv_blog_my_Post_time"
+                android:layout_toRightOf="@+id/tv_blog_my_Post_date"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="time"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/tv_blog_postedBy_me"
+                android:text="Post by : "
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_blog_postedBy_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="me"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_blog_deleteMyPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="delete post"
+            android:background="@drawable/blog_btn_del_bg"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

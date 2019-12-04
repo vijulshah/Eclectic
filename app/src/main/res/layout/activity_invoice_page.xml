@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InvoicePage">
+
+    <RelativeLayout
+        android:id="@+id/rl_tool_invoice"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invoice"
+            android:textColor="@android:color/black"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:fontFamily="cursive"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/rl_view_invoice"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rl_tool_invoice"
+        android:background="#d5d5d5"/>
+
+
+    <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:layout_below="@+id/rl_view_invoice">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:paddingTop="30dp"
+           android:paddingLeft="20dp"
+           android:paddingRight="20dp">
+
+           <TextView
+               android:id="@+id/tv_invoice_orderId"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@android:color/black"
+               android:text="Order ID : "
+               android:textSize="16sp"
+               android:textStyle="bold"/>
+
+           <TextView
+               android:id="@+id/tv_invoice_orderId_value"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_toRightOf="@+id/tv_invoice_orderId"
+               android:layout_marginLeft="10dp"
+               android:textSize="16sp"
+               android:text="012345678901234567"
+               android:textColor="@android:color/black"/>
+
+           <TextView
+               android:id="@+id/tv_invoice_name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@android:color/black"
+               android:layout_marginTop="10dp"
+               android:layout_below="@+id/tv_invoice_orderId"
+               android:text="Name : "
+               android:textSize="16sp"
+               android:textStyle="bold"/>
+
+           <TextView
+               android:id="@+id/tv_invoice_name_value"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/tv_invoice_orderId_value"
+               android:layout_toRightOf="@+id/tv_invoice_name"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="10dp"
+               android:textSize="16sp"
+               android:text="Vijul Shah"
+               android:textColor="@android:color/black"/>
+
+           <TextView
+               android:id="@+id/tv_invoice_email"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@android:color/black"
+               android:layout_below="@+id/tv_invoice_name"
+               android:layout_marginTop="10dp"
+               android:text="Email : "
+               android:textSize="16sp"
+               android:textStyle="bold"/>
+
+           <TextView
+               android:id="@+id/tv_invoice_email_value"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_toRightOf="@+id/tv_invoice_email"
+               android:layout_below="@+id/tv_invoice_name_value"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="10dp"
+               android:textSize="16sp"
+               android:text="vijul1904@gmail.com"
+               android:textColor="@android:color/black"/>
+
+           <TextView
+               android:id="@+id/tv_invoice_companyName"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@android:color/black"
+               android:layout_below="@+id/tv_invoice_email"
+               android:layout_marginTop="10dp"
+               android:text="Company Name : "
+               android:textSize="16sp"
+               android:textStyle="bold"/>
+
+           <TextView
+               android:id="@+id/tv_invoice_companyName_value"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_toRightOf="@+id/tv_invoice_companyName"
+               android:layout_below="@+id/tv_invoice_email_value"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="10dp"
+               android:textSize="16sp"
+               android:text="Eclectic"
+               android:textColor="@android:color/black"/>
+
+           <TextView
+               android:id="@+id/tv_invoice_roomKey"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@android:color/black"
+               android:layout_below="@+id/tv_invoice_companyName"
+               android:layout_marginTop="10dp"
+               android:text="Room Key : "
+               android:textSize="16sp"
+               android:textStyle="bold"/>
+
+           <TextView
+               android:id="@+id/tv_invoice_roomKeyValue"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_toRightOf="@+id/tv_invoice_roomKey"
+               android:layout_below="@+id/tv_invoice_companyName_value"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="10dp"
+               android:textSize="16sp"
+               android:text="XYZ_PQR_STU"
+               android:textColor="@android:color/black"/>
+
+           <TextView
+               android:id="@+id/tv_invoice_date"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@android:color/black"
+               android:layout_below="@+id/tv_invoice_roomKey"
+               android:layout_marginTop="10dp"
+               android:text="Order place on : "
+               android:textSize="16sp"
+               android:textStyle="bold"/>
+
+           <TextView
+               android:id="@+id/tv_invoice_date_value"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_toRightOf="@+id/tv_invoice_date"
+               android:layout_below="@+id/tv_invoice_roomKeyValue"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="10dp"
+               android:textSize="16sp"
+               android:text="29th Sept 19"
+               android:textColor="@android:color/black"/>
+
+           <TextView
+               android:id="@+id/tv_invoice_thanku"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:layout_below="@+id/tv_invoice_date"
+               android:layout_marginTop="30dp"
+               android:textSize="18sp"
+               android:textColor="@android:color/black"
+               android:text="Thank You for purchasing with Eclectic."/>
+
+          <!-- <TextView
+               android:id="@+id/tv_invoice_note"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:textSize="15sp"
+               android:paddingLeft="30dp"
+               android:paddingRight="30dp"
+               android:layout_marginTop="10dp"
+               android:layout_below="@+id/tv_invoice_thanku"
+               android:layout_gravity="center_vertical"
+               android:layout_centerHorizontal="true"
+               android:text="Please wait 24 hours for verfication to complete before loging into your room."/>
+-->
+           <ImageView
+               android:id="@+id/iv_invoice_thanks"
+               android:layout_width="250dp"
+               android:layout_height="150dp"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/tv_invoice_thanku"
+               android:layout_centerHorizontal="true"
+               android:src="@drawable/thankyou"/>
+
+           <Button
+               android:id="@+id/btn_invoice_done"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/create_room_btn"
+               android:layout_marginTop="30dp"
+               android:layout_below="@+id/iv_invoice_thanks"
+               android:text="Done"
+               android:textColor="@android:color/white"/>
+
+       </RelativeLayout>
+
+   </ScrollView>
+
+</RelativeLayout>

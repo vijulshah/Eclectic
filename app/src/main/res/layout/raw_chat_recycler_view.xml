@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/chat_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:elevation="5dp"
+        android:translationZ="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/rv_chat_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/a"
+            android:layout_gravity="left"
+            android:elevation="3dp"
+            android:translationZ="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_chat_name"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/rv_chat_img"
+            android:text="Penguin"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/opensans_regular"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/chat_card"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLightBlue"/>
+
+</RelativeLayout>

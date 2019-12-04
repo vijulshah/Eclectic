@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="225dp">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:gravity="center"
+           android:text="Enter folder name"
+           android:textSize="20sp"
+           android:textColor="@android:color/black"
+           android:textStyle="bold"
+           android:fontFamily="@font/opensans_regular"/>
+
+       <EditText
+           android:id="@+id/edt_new_folder_name"
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:background="@android:color/white"
+           android:padding="10dp"
+           android:textSize="18sp"
+           android:layout_marginTop="20dp"
+           android:textCursorDrawable="@drawable/black_cursor_color"
+           android:textColor="@android:color/black"
+           android:hint="Folder name">
+
+           <requestFocus/>
+
+       </EditText>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginBottom="20dp"
+           android:layout_marginTop="10dp"
+           android:weightSum="2">
+
+           <Button
+               android:id="@+id/btn_newFolder_create"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:layout_weight="1"
+               android:text="Create"
+               android:background="@drawable/dialog_btn"
+               android:textColor="@android:color/white"
+               android:layout_marginRight="2.5dp"/>
+
+           <Button
+               android:id="@+id/btn_newFolder_cancel"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:layout_marginLeft="2.5dp"
+               android:layout_weight="1"
+               android:text="Cancel"
+               android:background="@drawable/dialog_btn"
+               android:textColor="@android:color/white"/>
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+</androidx.cardview.widget.CardView>

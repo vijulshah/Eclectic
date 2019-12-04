@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:background="?attr/selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/post_image"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tv_blog_card_userPostTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Post Title"/>
+
+        <TextView
+            android:id="@+id/tv_blog_card_userPostDesc"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="Post Description"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/tv_blog_card_Post_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="username"
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:gravity="end"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/tv_blog_card_Post_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="date ,"
+                android:textSize="12sp"
+                android:fontFamily="serif"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/tv_blog_card_Post_time"
+                android:layout_toRightOf="@+id/tv_blog_card_Post_date"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="time"
+                android:textSize="12sp"
+                android:fontFamily="serif"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_drawer_layout_taskFolder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tasks.TaskFolder">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_taskFolder"
+            android:layout_height="56dp"
+            android:layout_width="match_parent"
+            android:background="?attr/colorPrimary"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp">
+
+            <ImageView
+                android:id="@+id/nav_btn_taskFolder"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_gravity="start|top"
+                app:srcCompat="@drawable/ic_menu_24dp"
+                android:clickable="true"
+                android:scaleType="center"
+                tools:ignore="MissingPrefix"
+                android:contentDescription="menu"/>
+
+            <TextView
+                android:id="@+id/title_taskFolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/app_name"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar_taskFolder">
+
+            <TextView
+                android:id="@+id/tv_taskFolder_folderName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="folder : Name"
+                android:gravity="center"
+                android:background="#F0EEEE"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_taskFolder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_below="@+id/tv_taskFolder_folderName"
+                android:background="#FFFF"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_empty_taskFolder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:src="@drawable/post"
+                    android:layout_marginTop="150dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="300dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Create a new task "
+                    android:textSize="22sp"
+                    android:textColor="@android:color/black"/>
+
+            </RelativeLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_taskFolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_up_arrow"
+                app:fabSize="mini"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_taskFolder_new_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|right"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="100dp"
+            android:src="@drawable/ic_note"
+            android:backgroundTint="@color/orange"
+            android:visibility="visible"
+            app:fabSize="normal"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view_taskFolder"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

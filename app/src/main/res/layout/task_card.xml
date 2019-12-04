@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:elevation="3dp"
+    android:translationZ="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_card_updateDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_dark"
+            android:text="updated : "
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_taskCard_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:background="@android:color/white"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/opensans_regular"
+                android:text="Title"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingLeft="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <ImageButton
+                android:id="@+id/ib_taskCard_options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_options"
+                android:tint="@android:color/black"
+                android:background="?attr/selectableItemBackground"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_taskCard_notes"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Notes"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            android:paddingRight="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_card_createdDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal"
+            android:gravity="center"
+            android:text="created : "
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

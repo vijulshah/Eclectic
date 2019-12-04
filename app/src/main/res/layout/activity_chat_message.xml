@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/chat_msgs_bg"
+    tools:context=".Chats.ChatMessageActivity">
+
+    <Toolbar
+        android:id="@+id/chat_msg_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/iv_chat_msg_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chat_back" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_chat_contact_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:src="@drawable/a" />
+
+            <TextView
+                android:id="@+id/tv_chat_contact_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_chat_contact_img"
+                android:fontFamily="@font/opensans_regular"
+                android:text=""
+                android:textColor="@color/colorLightBlue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_messages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chat_msg_toolbar"
+        android:layout_above="@+id/edt_msg_layout" />
+
+    <RelativeLayout
+        android:id="@+id/edt_msg_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/edt_type_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btn_send_msg"
+            android:background="@drawable/chat_type_msg_bg"
+            android:fontFamily="@font/opensans_regular"
+            android:hint="Type a message"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:inputType="textCapWords"
+            android:layout_marginRight="5dp">
+
+            <requestFocus/>
+
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/btn_send_msg"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/chat_send_msg_bg"
+            android:src="@drawable/ic_chat_send_msg" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

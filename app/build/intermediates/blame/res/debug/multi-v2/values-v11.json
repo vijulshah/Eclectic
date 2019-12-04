@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Android Projects\\Eclectic\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\vijul\\.gradle\\caches\\transforms-2\\files-2.1\\d6f001285c392e7b0bd0cfaa8ee56b3c\\jetified-play-services-appinvite-16.1.1\\res\\values-v11\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "170",
+                        "endLines": "5",
+                        "endColumns": "8",
+                        "endOffsets": "291"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "3",
+                        "endColumns": "8",
+                        "endOffsets": "176"
+                    }
+                }
+            ]
+        }
+    ]
+}
